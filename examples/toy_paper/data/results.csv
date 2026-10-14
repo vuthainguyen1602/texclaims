@@ -1,0 +1,4 @@
+model,f1,q_value
+RandomForest,0.93812,0.004
+LogisticRegression,0.90117,0.200
+SVM,0.93041,0.090

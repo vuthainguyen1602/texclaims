@@ -1,0 +1,21 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -e '.[test]'
+      - run: pytest -q
+      - name: the example paper must fail on its planted stale number
+        run: |
+          cd examples/toy_paper
+          if texclaims run; then echo "expected a failure"; exit 1; fi
+          texclaims run --json report.json || true
+          python -c "import json; r=json.load(open('report.json')); assert r['total']-r['passed']==1, r"
