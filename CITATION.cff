@@ -2,8 +2,10 @@ cff-version: 1.2.0
 message: "If you use texclaims, please cite it as below."
 title: "texclaims: check that a LaTeX manuscript still says what its data says"
 version: 0.1.0
+date-released: 2026-10-14
 license: MIT
 authors:
   - family-names: "Nguyen Vu"
     given-names: "Thai"
+    affiliation: "Campus in Ho Chi Minh City, University of Transport and Communications, Ho Chi Minh City, Vietnam"
 repository-code: "https://github.com/vuthainguyen1602/texclaims"

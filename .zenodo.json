@@ -1,0 +1,13 @@
+{
+  "title": "texclaims: check that a LaTeX manuscript still says what its data says",
+  "upload_type": "software",
+  "description": "A Python library and command-line tool that checks the numbers, table bolding and verdict sentences of a LaTeX manuscript against the CSV/JSON files behind them, compares values at the precision they are printed with, and fails a run when a family of checks executes fewer checks than its recorded floor.",
+  "creators": [
+    {
+      "name": "Nguyen Vu, Thai",
+      "affiliation": "Campus in Ho Chi Minh City, University of Transport and Communications, Ho Chi Minh City, Vietnam"
+    }
+  ],
+  "license": "MIT",
+  "keywords": ["reproducibility", "LaTeX", "research software", "manuscript checking", "continuous integration"]
+}
