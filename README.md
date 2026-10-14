@@ -1,5 +1,7 @@
 # texclaims
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23373702.svg)](https://doi.org/10.5281/zenodo.23373702)
+
 Check that a LaTeX manuscript still says what its data says.
 
 Numbers typed into a paper drift away from the files that produced them, and nothing about a
@@ -95,6 +97,12 @@ math letters folded back; table cells read from `.tex` (pdftotext emits tables c
 ```
 pip install -e '.[test]' && pytest
 ```
+
+## Citing
+
+Cite the archived release: [10.5281/zenodo.23373702](https://doi.org/10.5281/zenodo.23373702)
+(all versions; 0.1.0 is [10.5281/zenodo.23373703](https://doi.org/10.5281/zenodo.23373703)).
+`CITATION.cff` has the details.
 
 ## Licence
 
